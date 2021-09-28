@@ -1,5 +1,5 @@
 FROM python:3
-WORKDIR /telebot
+WORKDIR /home/telebot
 COPY . .
 CMD ["nko_telebot.py"]
 ENTRYPOINT ["python3"]

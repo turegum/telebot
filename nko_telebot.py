@@ -14,7 +14,8 @@ def greeting(message):
 * Чем ты занимаешься и каких успехов добился
 * Чем ты можешь быть полезен другим участникам
 '''
-    bot.send_message(message.chat.id, Intro_message+f"Привет {user_name}! "+Greeting_message.format(user_name))
+    if user_name != "Welcomebot":
+        bot.send_message(message.chat.id, Intro_message+f"Привет {user_name}! "+Greeting_message.format(user_name))
 
 if __name__ == '__main__':
     bot.polling(none_stop=True)

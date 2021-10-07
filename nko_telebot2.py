@@ -34,8 +34,13 @@ def webhook():
     else:
         flask.abort(403)
 
+# Handle '/start' and '/help'
+@bot.message_handler(commands=['help', 'start'])
+def send_welcome(message):
+     bot.reply_to(message,
+                  ("Hi there, I am WelcomeBot."))
 
-@bot.message_handler(content_types=['new_chat_members'])
+@bot.message_handler(func=lambda message: True, content_types=['new_chat_members'])
 def greeting(message):
     user_name = message.new_chat_members[0].first_name
     Intro_message="НКО LIFE15\n"

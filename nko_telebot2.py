@@ -4,7 +4,7 @@ import flask
 
 api_token = '2006638860:AAEnQqbO5gh2IUc0f6koGwil7PXtNR94ExM'
 
-WEBHOOK_HOST = '10.170.32.75'
+WEBHOOK_HOST = '195.144.1.193'
 WEBHOOK_PORT = 443  # 443, 80, 88 или 8443 (порт должен быть открыт!)
 WEBHOOK_LISTEN = '0.0.0.0'  # На некоторых серверах придется указывать такой же IP, что и выше
 

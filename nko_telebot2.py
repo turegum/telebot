@@ -1,4 +1,5 @@
 from telebot import TeleBot
+import time
 import flask
 
 api_token = '2006638860:AAEnQqbO5gh2IUc0f6koGwil7PXtNR94ExM'
